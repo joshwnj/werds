@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notes",
+  "info": {
+    "name": "Note",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "body": {
+      "type": "text"
+    },
+    "tags": {
+      "collection": "tag"
+    },
+    "relevance": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    }
+  }
+}
